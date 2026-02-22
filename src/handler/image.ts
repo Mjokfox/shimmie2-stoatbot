@@ -21,7 +21,7 @@ export class PostHandler implements Handler {
         }
         const post_id = fields.post_id;
         const embed = image_embed(this.client, fields.username, post_id, fields.hash, fields.mime, fields.size);
-        this.channel.sendMessage({ content: embed.icon_url, embeds: [embed] })
+        this.channel.sendMessage({ content: `[](${embed.icon_url})`, embeds: [embed] })
             .then(message => create_post(this.db, post_id, message.id))
             .catch(e => console.error(`error notifying post creation:\n${e}`));
     }
@@ -35,7 +35,7 @@ export class PostHandler implements Handler {
 
         const embed = image_embed(this.client, fields.username, fields.post_id, fields.hash, fields.mime, fields.size);
         this.channel.fetchMessage(message_id)
-            .then(message => message.edit({ content: embed.icon_url, embeds: [embed] }))
+            .then(message => message.edit({ content: `[](${embed.icon_url})`, embeds: [embed] }))
             .catch(e => console.error(`error notifying post editing:\n${e}`));
     }
     delete(fields: Fields): void {

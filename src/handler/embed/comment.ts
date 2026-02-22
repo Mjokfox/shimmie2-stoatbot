@@ -4,7 +4,7 @@ export function comment_embed(username: string, postID: number, commentID: numbe
 	return {
 		"color": "0xff8c00",
 		"title": `New comment on post >>${postID}!`,
-		"description": `${username}: ${comment}`,
+		"description": `#### ${username}\n${comment}`,
 		"url": `${config.serverUrl}/post/view/${postID}#${commentID}`
 	}
 }
