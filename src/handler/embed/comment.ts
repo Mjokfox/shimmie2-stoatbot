@@ -1,4 +1,4 @@
-import config from '../../config.json' with { type: "json" };
+import config from '../../../config.json' with { type: "json" };
 
 export function comment_embed(username: string, postID: number, commentID: number, comment: string) {
 	return {

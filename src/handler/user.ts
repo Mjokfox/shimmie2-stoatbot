@@ -1,7 +1,7 @@
 import { Channel } from 'stoat.js';
 import BetterSqlite3 from "better-sqlite3"
-import { type Handler, Fields } from '../models/handler.ts';
-import { user_embed } from './embed/user.ts';
+import { type Handler, Fields } from '../models/handler.js';
+import { user_embed } from './embed/user.js';
 
 export class UserHandler implements Handler {
     db: BetterSqlite3.Database;

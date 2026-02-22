@@ -1,5 +1,5 @@
 import { Client } from 'stoat.js';
-import config from '../../config.json' with { type: "json" };
+import config from '../../../config.json' with { type: "json" };
 import mime from 'mime';
 
 export function image_embed(client: Client, username: string, post_id: number, hash: string, post_mime: string, size: number) {

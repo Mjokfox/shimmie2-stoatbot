@@ -1,9 +1,9 @@
 import { Client } from 'stoat.js';
 import BetterSqlite3 from "better-sqlite3"
 import { Channel } from 'stoat.js';
-import { image_embed } from './embed/image.ts';
-import { create_post, delete_post, get_message_from_post_id, get_replies_from_post_id } from "../dbfn.ts";
-import { type Handler, Fields } from "../models/handler.ts";
+import { image_embed } from './embed/image.js';
+import { create_post, delete_post, get_message_from_post_id, get_replies_from_post_id } from "../dbfn.js";
+import { type Handler, Fields } from "../models/handler.js";
 
 export class PostHandler implements Handler {
     client: Client;

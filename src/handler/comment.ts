@@ -1,8 +1,8 @@
 import { Channel } from 'stoat.js';
-import { comment_embed } from './embed/comment.ts';
+import { comment_embed } from './embed/comment.js';
 import BetterSqlite3 from "better-sqlite3"
-import { create_comment, delete_comment, get_message_from_comment_id, get_message_from_post_id } from '../dbfn.ts';
-import { type Handler, Fields } from '../models/handler.ts';
+import { create_comment, delete_comment, get_message_from_comment_id, get_message_from_post_id } from '../dbfn.js';
+import { type Handler, Fields } from '../models/handler.js';
 
 export class CommentHandler implements Handler {
     db: BetterSqlite3.Database;

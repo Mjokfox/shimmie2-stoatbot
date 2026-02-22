@@ -4,12 +4,12 @@ import Database from "better-sqlite3"
 import 'reflect-metadata';
 import { plainToClass } from 'class-transformer';
 
-import { CommentHandler } from './handler/comment.ts';
-import { PostHandler } from './handler/image.ts';
+import { CommentHandler } from './handler/comment.js';
+import { PostHandler } from './handler/image.js';
 
-import config from './config.json' with { type: "json" };
-import { type Handler, ShimmieJson } from './models/handler.ts';
-import { UserHandler } from './handler/user.ts';
+import config from '../config.json' with { type: "json" };
+import { type Handler, ShimmieJson } from './models/handler.js';
+import { UserHandler } from './handler/user.js';
 
 const db = new Database("db/sqlite.db");
 
