@@ -1,0 +1,19 @@
+{
+  "name": "findafoxbot_stoat",
+  "version": "1.0.0",
+  "description": "A stoat.chat bot that will forward events from shimmie2 through a udp client",
+  "main": "main.ts",
+  "author": "Mjokfox",
+  "license": "GPLv3",
+  "type": "module",
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "class-transformer": "^0.5.1",
+    "mime": "^4.1.0",
+    "reflect-metadata": "^0.2.2",
+    "stoat.js": "^7.3.6"
+  }
+}

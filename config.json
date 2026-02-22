@@ -1,0 +1,7 @@
+{
+	"token": "alphanumerical stoat bot token",
+	"serverUrl": "full server url, without trialing slash like https://example.com",
+	"channelID" : "the channel to post updates in",
+	"logchannelID": "the channel for logs",
+	"udpPort": 10004 // default
+}
